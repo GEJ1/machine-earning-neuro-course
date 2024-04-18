@@ -1,5 +1,6 @@
+workdir: /tmp
 datagrabber:
-  kind: PatterDataladDataGrabber
+  kind: PatternDataladDataGrabber
   uri: https://github.com/OpenNeuroDatasets/ds003097.git
   patterns:
     VBM_GM:
@@ -26,7 +27,11 @@ markers:
     parcellation: Shen_2013_50
     method: mean
 
-  - name: Shen_2013_50_Mean
+  - name: Shen_2013_50_Std
     kind: ParcelAggregation
     parcellation: Shen_2013_50
     method: std
+
+storage:
+  kind: HDF5FeatureStorage
+  uri: /home/gus/Documents/REPOS/machine-earning-neuro-course/results/ds003097.hdf5

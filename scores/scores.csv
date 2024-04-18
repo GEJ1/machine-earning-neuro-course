@@ -1,0 +1,22 @@
+fit_time,score_time,estimator,test_score,train_score,n_train,n_test,repeat,fold,cv_mdsum
+0.17534160614013672,0.0015845298767089844,"GridSearchCV(cv=KFold(n_splits=5, random_state=None, shuffle=False),
+             estimator=Pipeline(steps=[('set_column_types',
+                                        SetColumnTypes(X_types={})),
+                                       ('zscore', StandardScaler()),
+                                       ('svm', SVC())]),
+             param_grid={'svm__C': [0.1, 1, 10],
+                         'svm__kernel': ['linear', 'rbf']})",0.9411764705882353,0.9696969696969697,66,34,0,0,cdec37c5598af020f7dbca5ad09e0e36
+0.1517777442932129,0.0014247894287109375,"GridSearchCV(cv=KFold(n_splits=5, random_state=None, shuffle=False),
+             estimator=Pipeline(steps=[('set_column_types',
+                                        SetColumnTypes(X_types={})),
+                                       ('zscore', StandardScaler()),
+                                       ('svm', SVC())]),
+             param_grid={'svm__C': [0.1, 1, 10],
+                         'svm__kernel': ['linear', 'rbf']})",0.9090909090909091,0.9402985074626866,67,33,0,1,cdec37c5598af020f7dbca5ad09e0e36
+0.14323139190673828,0.0014841556549072266,"GridSearchCV(cv=KFold(n_splits=5, random_state=None, shuffle=False),
+             estimator=Pipeline(steps=[('set_column_types',
+                                        SetColumnTypes(X_types={})),
+                                       ('zscore', StandardScaler()),
+                                       ('svm', SVC())]),
+             param_grid={'svm__C': [0.1, 1, 10],
+                         'svm__kernel': ['linear', 'rbf']})",0.9393939393939394,0.9402985074626866,67,33,0,2,cdec37c5598af020f7dbca5ad09e0e36
